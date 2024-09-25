@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+    <link rel="stylesheet" href="page.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Product List</h1>
+        
+        <div class="filter-section">
+            <button class="filter-btn" onclick="filterProducts('All')">All</button>
+            <button class="filter-btn" onclick="filterProducts('Electronics')">Electronics</button>
+            <button class="filter-btn" onclick="filterProducts('Clothing')">Clothing</button>
+        </div>
+        
+        <div class="product-display" id="product-list">
+            <!-- Products will be dynamically inserted here -->
+        </div>
+    </div>
+
+    <script src="data.js"></script>
+</body>
+</html>
